@@ -4,7 +4,7 @@ from django.contrib.staticfiles.templatetags.staticfiles import static
 
 class ContactInfoDefault(object):
     def __init__(self):
-        """ Hardcoded in case there is no ContactInfo object """
+        """Hardcoded in case there is no ContactInfo object"""
 
         self.webmaster_email_address = "halbesma@mpa-garching.mpg.de"
 

@@ -23,7 +23,7 @@ MONTH_DICT = {
 
 
 def export_to_xls(request, queryset):
-    """ Generic method to export QuerySet of any Model instance to xls """
+    """Generic method to export QuerySet of any Model instance to xls"""
 
     import xlwt
 
@@ -238,7 +238,7 @@ def parse_bibtex_and_create_reference(relevant, journals, debug=None):
 
 
 def scrape_reference_details_from_old_ads(url, journals, debug=None):
-    """ Here we obtain information for a Reference from old-style ADS' Bibtex entry """
+    """Here we obtain information for a Reference from old-style ADS' Bibtex entry"""
 
     from django.conf import settings
 
@@ -279,7 +279,7 @@ def scrape_reference_details_from_old_ads(url, journals, debug=None):
 
 
 def scrape_reference_details_from_new_ads(url, journals, timeout=5, debug=None):
-    """ Here we obtain information for a Reference from new-style ADS' Bibtex entry """
+    """Here we obtain information for a Reference from new-style ADS' Bibtex entry"""
 
     from django.conf import settings
 
@@ -322,7 +322,7 @@ def scrape_reference_details_from_new_ads(url, journals, timeout=5, debug=None):
 
 
 def convert_gc_names_from_sh_to_any(name, reverse=False):
-    """ Get GC name variations from SupaHarris names to other possibilities """
+    """Get GC name variations from SupaHarris names to other possibilities"""
 
     # TODO: we might want all keys in this dict to use on save?
     # For example, if 'ngc1337' is created: save it as 'NGC 1337'

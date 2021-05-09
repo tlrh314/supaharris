@@ -105,7 +105,7 @@ class UserModelAdmin(UserAdmin):
         obj.save()
 
     def history_view(self, request, object_id, extra_context=None):
-        """ Hack the history view such that it renders html """
+        """Hack the history view such that it renders html"""
         s = super(UserModelAdmin, self).history_view(
             request, object_id, extra_context=None
         )
